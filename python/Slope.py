@@ -2,7 +2,7 @@ import math, copy
 import numpy as np
 
 class Slope:
-    DIFF_STEP_SIZE = 0.001
+    DIFF_STEP_SIZE = 0.0001
 
     def __init__ (self, **kwargs):
         if "inputfile" in kwargs:

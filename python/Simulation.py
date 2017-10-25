@@ -2,7 +2,7 @@ from math import sqrt
 import Slope
 
 class Simulation:
-    SIM_STEP_SIZE = 0.001
+    SIM_STEP_SIZE = 0.0001
     const_g = -981
 
     def __init__ (self, slope, **kwargs):
