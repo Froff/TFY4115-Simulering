@@ -102,3 +102,6 @@ ENV/
 
 # Linux lock files
 .~lock*
+
+# Output files
+*.png

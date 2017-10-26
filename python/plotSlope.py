@@ -28,9 +28,10 @@ for x in x_axis_theory:
 
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1, aspect="equal")
-ax.set_xlabel("Horisontal (cm)")
-ax.set_ylabel("Vertikal (cm)")
+ax.set_xlabel("x (cm)")
+ax.set_ylabel("y (cm)")
 data_plot = ax.plot(x_axis_data, data_axis)
 theory_plot = ax.plot(x_axis_theory, theory_axis)
 ax.legend((data_plot[0], theory_plot[0]), ("Fysisk bane", "Teoretisk ligning"))
-plt.show()
+fig.tight_layout()
+fig.savefig("../slope_{}.png".format(slope_type), bbox_inches="tight")
